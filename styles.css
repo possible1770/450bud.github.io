@@ -154,7 +154,14 @@ a { color: inherit; }
   letter-spacing: -.025em; margin: 0 0 26px; max-width: 14ch;
 }
 .hero__title em { font-style: normal; color: var(--accent-d); }
-.hero__lead { max-width: 46ch; color: var(--ink-soft); margin: 0 0 34px; font-size: clamp(16px, 1.4vw, 18px); }
+.hero__lead { max-width: 46ch; color: var(--ink-soft); margin: 0 0 18px; font-size: clamp(16px, 1.4vw, 18px); }
+.hero__rhythm {
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(15px, 1.55vw, 19px); line-height: 1.5; letter-spacing: -.005em;
+  color: var(--ink); margin: 0 0 34px; max-width: 42ch;
+}
+.hero__rhythm i { color: var(--accent-d); font-style: normal; font-weight: 700; padding: 0 2px; }
+.hero__rhythm-emoji { white-space: nowrap; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 48px; }
 
 .btn {
@@ -410,12 +417,14 @@ a { color: inherit; }
 .hero .eyebrow,
 .hero__title,
 .hero__lead,
+.hero__rhythm,
 .hero__actions,
 .stats,
 .hero .media--hero { opacity: 0; transform: translateY(22px); }
 body.loaded .hero .eyebrow,
 body.loaded .hero__title,
 body.loaded .hero__lead,
+body.loaded .hero__rhythm,
 body.loaded .hero__actions,
 body.loaded .stats,
 body.loaded .hero .media--hero {
@@ -425,12 +434,13 @@ body.loaded .hero .media--hero {
 body.loaded .hero .eyebrow   { transition-delay: .05s; }
 body.loaded .hero__title     { transition-delay: .14s; }
 body.loaded .hero__lead      { transition-delay: .34s; }
-body.loaded .hero__actions   { transition-delay: .46s; }
-body.loaded .stats           { transition-delay: .56s; }
+body.loaded .hero__rhythm    { transition-delay: .44s; }
+body.loaded .hero__actions   { transition-delay: .54s; }
+body.loaded .stats           { transition-delay: .64s; }
 body.loaded .hero .media--hero { transition-delay: .2s; }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero .eyebrow, .hero__title, .hero__lead, .hero__actions, .stats, .hero .media--hero { opacity: 1; transform: none; }
+  .hero .eyebrow, .hero__title, .hero__lead, .hero__rhythm, .hero__actions, .stats, .hero .media--hero { opacity: 1; transform: none; }
 }
 
 /* ---------- One orchestrated reveal on scroll ---------- */
