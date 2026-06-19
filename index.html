@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>450·BUD — Будівництво заміських будинків</title>
   <meta name="description" content="450·BUD — будівництво та реконструкція заміських будинків і котеджів під ключ. Проєкт, кошторис, будівництво та оздоблення. Залиште запит на консультацію." />
-  <meta name="theme-color" content="#425340" />
+  <meta name="theme-color" content="#41523F" />
   <link rel="icon" type="image/jpeg" href="logo.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -32,43 +32,47 @@
   <main>
     <!-- HERO -->
     <section class="hero" aria-labelledby="hero-title">
-      <p class="eyebrow">Cottage&nbsp;Building · Україна</p>
-      <h1 class="hero__title" id="hero-title">
-        Будуємо заміські<br />будинки, в яких<br /><em>хочеться залишитися.</em>
-      </h1>
-      <p class="hero__lead">
-        Проєктуємо, зводимо та реконструюємо приватні котеджі під ключ —
-        від фундаменту до останнього вимикача. Один підрядник на весь шлях.
-      </p>
-      <div class="hero__actions">
-        <a class="btn btn--solid" href="#contact">Залишити запит</a>
-        <a class="btn btn--ghost" href="#services">Що ми робимо</a>
+      <div class="hero__copy">
+        <p class="eyebrow">Cottage Building · Україна</p>
+        <h1 class="hero__title" id="hero-title">
+          Заміські будинки, в яких <em>хочеться залишитися</em>
+        </h1>
+        <p class="hero__lead">
+          Проєктуємо, зводимо та реконструюємо приватні котеджі під ключ —
+          від фундаменту до останнього вимикача. Один підрядник на весь шлях.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--solid" href="#contact">Залишити запит</a>
+          <a class="btn btn--ghost" href="#services">Що ми робимо</a>
+        </div>
+        <dl class="stats">
+          <div><dt>12+</dt><dd>років на майданчику</dd></div>
+          <div><dt>80+</dt><dd>зданих будинків</dd></div>
+          <div><dt>1</dt><dd>команда від проєкту до ключів</dd></div>
+        </dl>
       </div>
-      <dl class="stats">
-        <div><dt>12+</dt><dd>років на майданчику</dd></div>
-        <div><dt>80+</dt><dd>зданих будинків</dd></div>
-        <div><dt>1</dt><dd>команда від проєкту до ключів</dd></div>
-      </dl>
-      <div class="hero__monogram" aria-hidden="true">
-        <span>4</span><span class="dot">·</span><span class="stack"><span>5</span><span>0</span></span>
-      </div>
+      <!-- Замініть вміст .media на <img src="..." alt="..."> з реальним фото будинку -->
+      <div class="media media--hero" role="img" aria-label="Заміський будинок, збудований 450·BUD"></div>
     </section>
 
     <!-- SERVICES -->
     <section class="panel" id="services" aria-labelledby="services-title">
       <header class="sec-head">
-        <span class="sec-num">01</span>
-        <h2 class="sec-title" id="services-title">Послуги</h2>
+        <span class="sec-num">Послуги</span>
+        <h2 class="sec-title" id="services-title">Що ми робимо</h2>
         <p class="sec-note">Беремо повний цикл або підключаємось на окремому етапі.</p>
       </header>
       <div class="cards">
-        <a class="card" href="services/budivnytstvo.html">
-          <span class="card__idx">а</span>
-          <h3>Будівництво під ключ</h3>
-          <p>Заміські будинки та котеджі з нуля: фундамент, коробка, покрівля, інженерія, оздоблення. Ви заїжджаєте у готовий дім.</p>
-          <span class="card__arrow">Детальніше
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
-          </span>
+        <a class="card card--feature" href="services/budivnytstvo.html">
+          <div class="media" role="img" aria-label="Будинок під ключ"></div>
+          <div class="card__body">
+            <span class="card__idx">а</span>
+            <h3>Будівництво під ключ</h3>
+            <p>Заміські будинки та котеджі з нуля: фундамент, коробка, покрівля, інженерія, оздоблення. Ви заїжджаєте у готовий дім.</p>
+            <span class="card__arrow">Детальніше
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+            </span>
+          </div>
         </a>
         <a class="card" href="services/rekonstruktsiya.html">
           <span class="card__idx">б</span>
@@ -100,7 +104,7 @@
     <!-- PROCESS -->
     <section class="panel panel--green" id="process" aria-labelledby="process-title">
       <header class="sec-head">
-        <span class="sec-num">02</span>
+        <span class="sec-num">Процес</span>
         <h2 class="sec-title" id="process-title">Як ми працюємо</h2>
         <p class="sec-note">Чотири кроки — від першої розмови до врученого ключа.</p>
       </header>
@@ -115,18 +119,30 @@
     <!-- PROJECTS -->
     <section class="panel" id="projects" aria-labelledby="projects-title">
       <header class="sec-head">
-        <span class="sec-num">03</span>
-        <h2 class="sec-title" id="projects-title">Роботи</h2>
+        <span class="sec-num">Роботи</span>
+        <h2 class="sec-title" id="projects-title">Наші напрями</h2>
         <p class="sec-note">Кілька напрямів, у яких ми сильні. Більше — в Instagram.</p>
       </header>
       <ul class="tiles">
-        <li class="tile"><h3>Одноповерхові котеджі</h3><p>Компактні теплі будинки для постійного проживання.</p></li>
-        <li class="tile"><h3>Двоповерхові з мансардою</h3><p>Більше простору без зайвого фундаменту.</p></li>
-        <li class="tile"><h3>Реконструкції</h3><p>Старий дім — нові планування, інженерія та фасад.</p></li>
+        <li class="tile">
+          <div class="media" role="img" aria-label="Одноповерховий котедж"></div>
+          <div class="tile__body"><h3>Одноповерхові котеджі</h3><p>Компактні теплі будинки для постійного проживання.</p></div>
+        </li>
+        <li class="tile">
+          <div class="media" role="img" aria-label="Двоповерховий будинок із мансардою"></div>
+          <div class="tile__body"><h3>Двоповерхові з мансардою</h3><p>Більше простору без зайвого фундаменту.</p></div>
+        </li>
+        <li class="tile">
+          <div class="media" role="img" aria-label="Реконструкція будинку"></div>
+          <div class="tile__body"><h3>Реконструкції</h3><p>Старий дім — нові планування, інженерія та фасад.</p></div>
+        </li>
         <li class="tile tile--ig">
-          <h3>@4.5.0.bud</h3>
-          <p>Свіжі обʼєкти й процес будівництва.</p>
-          <a class="tile__link" href="https://www.instagram.com/4.5.0.bud/" target="_blank" rel="noopener">Дивитись в Instagram →</a>
+          <div class="media" role="img" aria-label="Instagram 450·BUD"></div>
+          <div class="tile__body">
+            <h3>@4.5.0.bud</h3>
+            <p>Свіжі обʼєкти й процес будівництва.</p>
+            <a class="tile__link" href="https://www.instagram.com/4.5.0.bud/" target="_blank" rel="noopener">Дивитись в Instagram →</a>
+          </div>
         </li>
       </ul>
     </section>
@@ -134,7 +150,7 @@
     <!-- CONTACT -->
     <section class="panel panel--green contact" id="contact" aria-labelledby="contact-title">
       <header class="sec-head">
-        <span class="sec-num">04</span>
+        <span class="sec-num">Запит</span>
         <h2 class="sec-title" id="contact-title">Залишити запит</h2>
         <p class="sec-note">Заповніть форму — відкриється ваша пошта з готовим листом до нас.</p>
       </header>
